@@ -1,0 +1,6 @@
+# build files
+/bin/**
+/compile_commands.json
+
+# lsp cache
+/.cache/**
