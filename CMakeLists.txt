@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 set(CMAKE_BUILD_TYPE Release)
 project(4931_bootstrapper
 	VERSION 1.0.0
-	DESCRIPTION "Quickly unpacks and sets up my development toolkit on any computer"
+	DESCRIPTION "Quickly unpacks and sets up my development toolkit on any Windows computer"
 	LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)

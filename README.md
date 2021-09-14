@@ -1,8 +1,8 @@
 # Devkit Bootstrapper
-For quickly unpacking and setting up my development toolkit on any computer
+For quickly unpacking and setting up my development toolkit on any Windows computer
 
 ## Supported Platforms
-Probably all of them, but only tested on Windows
+Only Windows
 
 ## Usage
 

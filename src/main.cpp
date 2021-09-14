@@ -5,19 +5,14 @@
 #include "help/help.hpp"
 #include "install/install.hpp"
 #include "uninstall/uninstall.hpp"
-
-#if _WIN32 == 1
-#	include "adjust/adjust.hpp"
-#endif // _WIN32 == 1
+#include "adjust/adjust.hpp"
 
 
 static std::map<std::string, int(*)( int, char** )> program_operations = {
 	{ "help",      &program_help },
 	{ "install",   &program_install },
 	{ "uninstall", &program_uninstall },
-#if _WIN32 == 1
 	{ "adjust",    &program_adjust },
-#endif // _WIN32 == 1
 };
 
 
