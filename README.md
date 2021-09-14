@@ -6,7 +6,7 @@ Probably all of them, but only tested on Windows
 
 ## Usage
 
-Setting up the Bootstrapper
+**Setting up the Bootstrapper**
 
 1. Get a flash drive
 2. Move a built binary of the bootstrapper into the drive
@@ -15,12 +15,12 @@ Setting up the Bootstrapper
 5. Move an installation of Alacritty into the drive under the directory `alacritty/inst`
 6. Move your Alacritty configuration into the drive under the directory `alacritty/conf`
 
-Configuration file macros
+**Configuration file macros**
 
-* BOOTSTRAP_BINARY_DIR - The directory the program binaries are found
-* BOOTSTRAP_CONFIG_DIR - The directory the program configuration files are found
+* `BOOTSTRAP_BINARY_DIR` - The directory the program binaries are found
+* `BOOTSTRAP_CONFIG_DIR` - The directory the program configuration files are found
 
-Using the Bootstrapper
+**Using the Bootstrapper**
 
 1. Copy out all files from the flash drive
 2. Run the bootstrapper binary with the `install` argument
