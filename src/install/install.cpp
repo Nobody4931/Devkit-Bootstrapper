@@ -2,7 +2,7 @@
 
 #include "install/install.hpp"
 
-#include <shlobj_core.h>
+#include <windows.h>
 #include <winreg.h>
 #include <winuser.h>
 
@@ -13,6 +13,7 @@
 #include <string>
 
 #include "config.hpp"
+#include "util/sfolders.hpp"
 
 namespace fs = std::filesystem;
 
@@ -22,16 +23,6 @@ static const std::regex::flag_type re_flags = std::regex::flag_type::ECMAScript 
 static const std::regex re_macro_user_dir( "BOOTSTRAP_USER_DIR", re_flags );
 static const std::regex re_macro_binary_dir( "BOOTSTRAP_BINARY_DIR", re_flags );
 static const std::regex re_macro_config_dir( "BOOTSTRAP_CONFIG_DIR", re_flags );
-
-
-static inline fs::path get_user_profile_dir() {
-	CHAR user_dir[ MAX_PATH ] { 0 };
-
-	if ( !::SHGetSpecialFolderPathA( NULL, user_dir, CSIDL_PROFILE, false ) )
-		return fs::path();
-
-	return fs::path( user_dir );
-}
 
 
 static void expand_macros_recursive( const fs::path& directory, const fs::path& user_dir, const fs::path& inst_dir, const fs::path& conf_dir ) {
