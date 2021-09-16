@@ -17,6 +17,7 @@ Only Windows
 
 **Configuration file macros**
 
+* `BOOTSTRAP_USER_DIR` - The user profile directory
 * `BOOTSTRAP_BINARY_DIR` - The directory the program binaries are found
 * `BOOTSTRAP_CONFIG_DIR` - The directory the program configuration files are found
 
